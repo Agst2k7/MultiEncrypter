@@ -1,4 +1,5 @@
 #include <iostream>
+#include "XOR.hpp"
 
 using namespace std;
 
@@ -13,9 +14,14 @@ int main(int argc, char** argv) {
 
     if(argc < 2) {
         Page now;
-        int int_input;
+
+        
         now = MENU;
 
+        int int_input;
+        string s_input;
+        char key;
+        
         while (now != EXIT) {
     
             switch (now) {
@@ -52,6 +58,7 @@ int main(int argc, char** argv) {
 
                 case CAESAR: {
                     cout << "CAESAR MENU" << endl;
+                    
                     now = EXIT;
                     break;
                 }
