@@ -1,5 +1,8 @@
 #include <iostream>
+
 #include "XOR.hpp"
+#include "utils.hpp"
+#include "CAESAR.hpp"
 
 using namespace std;
 
@@ -31,8 +34,8 @@ int main(int argc, char** argv) {
                     cout << "[1]-XOR" << endl;
                     cout << "[2]-CAESAR" << endl;
                     cout << "[3]-EXIT" << endl;
-
-                    cin >> int_input;
+                    
+                    int_input = getMenuIntInput();
 
                     switch(int_input) {
 
